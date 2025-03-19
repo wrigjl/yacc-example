@@ -3,7 +3,6 @@
 #include <string>
 #include <vector>
 #include <list>
-#include "Expression.h"
 #include "calc-parser.h"
 %}
 
