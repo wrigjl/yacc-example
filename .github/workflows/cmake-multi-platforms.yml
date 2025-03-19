@@ -68,6 +68,7 @@ jobs:
             choco install winflexbison3
           elif [ "$RUNNER_OS" == "macOS" ]; then
             brew install bison
+            echo /opt/homebrew/opt/bison/bin >> "$GITHUB_PATH"
           fi
 
       - name: Configure CMake
