@@ -66,6 +66,8 @@ jobs:
         run: |
           if [ "$RUNNER_OS" == "Windows" ]; then
             choco install winflexbison3
+          elif [ "$RUNNER_OS" == "macOS" ]; then
+            brew install bison
           fi
 
       - name: Configure CMake
